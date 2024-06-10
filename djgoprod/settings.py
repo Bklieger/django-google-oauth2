@@ -98,13 +98,12 @@ running_deployment_transcript+= f'\n [Logging] Running in {DEPLOYMENT}. (Line {i
 
 
 """
-Set the secret_key, debug mode, and allowed hosts based on the 
+Set the secret_key and allowed hosts based on the 
 deployment environment and the environment variables.
 
 Requirements:
     - SECRET_KEY: A secret key for the Django project. 
         [Environment variable in: local, development, production]
-    - DEBUG: A boolean value for whether or not to run in debug mode.
     - ALLOWED_HOSTS: A list of strings representing the allowed hosts. 
         [Environment variable in: development, production]
 """

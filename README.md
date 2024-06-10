@@ -2,11 +2,11 @@
 
 ## Motivation
 
-There are many open source Django boilerplate templates, but they are often outdated, bloated, overly complex, or lack important features for use in production. The motivation for this project was to create an intuitive boilerplate that contains all the essential features to start a production-ready Django backend app with authentication: Google Oauth, optional PostgreSQL database, whitenoise for static files, dockerization, and three configurable deployment environments.
+There are many open source Django boilerplate templates, but they are often outdated, bloated, overly complex, or lack important features for use in production. The motivation for this project was to create an intuitive boilerplate that contains all the essential features to start a production-ready Django backend app with authentication: Google OAuth2, optional PostgreSQL database, whitenoise for static files, dockerization, and three configurable deployment environments.
 
 ## Description of Stack
 
-With Google Oauth, you do not need to manage login, logout, reset password, and confirm email logic nor pages. It is also a faster experience for users than traditional authentication. With Django, you can add password support at any time after launch. You can easily use a local SQLite database or a PostgreSQL database using just one line in your .env file. Whitenoise is configured to help prevent any static file issues when running and deploying. Docker allows you to easily run the project and collaborate simply across computer environments. Finally, the three different deployment environments allow you to switch between debugging in local, testing in development, and deploying in production without needing to modify settings.py.
+With Google OAuth, you do not need to manage login, logout, reset password, and confirm email logic nor pages. It is also a faster experience for users than traditional authentication. With Django, you can add password support at any time after launch. You can easily use a local SQLite database or a PostgreSQL database using just one line in your .env file. Whitenoise is configured to help prevent any static file issues when running and deploying. Docker allows you to easily run the project and collaborate simply across computer environments. Finally, the three different deployment environments allow you to switch between debugging in local, testing in development, and deploying in production without needing to modify settings.py.
 
 Djgo-prod is powerful because it makes everything simple.
 
@@ -115,6 +115,7 @@ The GOOGLE_CLIENT_ID and GOOGLE_SECRET_KEY are required for all deployments. In 
 
 Once you have set all the variables in a file named {deployment}.env (e.g. local.env, development.env, production.env), you can move to the next step. Using docker is recommended, but instructions for deployment without docker are included.
 
+If you are deploying the app to production or a different port from 8000, you will need to modify the callback_url in accounts/urls.py to match your url.
 
 ## Step 3: Run With Docker
 

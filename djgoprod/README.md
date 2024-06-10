@@ -1,7 +1,16 @@
-# djgoprod App
+# Djgoprod App
+
+In this folder, the main app-wide configuration settings are applied.
+
+Files with code:
+- global_utils.py: Three global utils used for printing green, yellow, and red statements in the error and warning report.
+- settings.py: Global Django configuration for the application settings.
+- urls.py: Set the urls for the application which include the accounts (login, logout), allauth (other auth endpoints), and admin (Django built-in admin).
+- wsgi.py: Web Server Gateway Interface (WSGI) for production deployments.
 
 ## Details
-The djgoprod app handles the application settings in settings.py and the deployment status page. A custom command to check the deployment status is also defined under management/commands/env.py
+
+The djgoprod app defines the main configuration settings for the djoprod application. The settings.py file contains most of the code, which contains comprehensive error and warning statements as well as changes in behavior based upon deployment environments.
 
 ## Environment Variables
 
@@ -12,53 +21,13 @@ Environment Variables:
         [Environment variable in: local, development, production]  
     - DJANGO_SETTINGS_MODULE: Required for running, always djgoprod.settings  
         [Environment variable in: local, development, production (all)]  
-    - DEPLOYMENT: A string representing the deployment environment.  
-        [Options: local, development, production]  
-    - SECRET_KEY: A secret key for the Django project.  
-        [Environment variable in: production]  
-    - DEBUG: A boolean value for whether or not to run in debug mode.  
-    - ALLOWED_HOSTS: A list of strings representing the allowed hosts.  
-        [Environment variable in: development, production]  
-    - PSQL_DATABASE_URL: A string representing the database URL.  
-        [Environment variable in: development, production]  
-    - DEEPGRAM_API_KEY: A string representing the Deepgram API key.  
-        [Environment variable in: local, development, production]  
-    - OPENAI_API_KEY: A string representing the OpenAI API key.  
-        [Environment variable in: local, development, production]  
-
-
-Requirements for each deployment environment:  
-    Local: GOOGLE_CLIENT_ID, GOOGLE_SECRET_KEY, DJANGO_SETTINGS_MODULE, DEEPGRAM_API_KEY, OPENAI_API_KEY required. DEPLOYMENT recommended.  
-    Development: GOOGLE_CLIENT_ID, GOOGLE_SECRET_KEY, DJANGO_SETTINGS_MODULE, DEPLOYMENT, SECRET_KEY, PSQL_DATABASE_URL, ALLOWED_HOSTS, DEEPGRAM_API_KEY, OPENAI_API_KEY required.  
-    Production: GOOGLE_CLIENT_ID, GOOGLE_SECRET_KEY, DJANGO_SETTINGS_MODULE, DEPLOYMENT, SECRET_KEY, PSQL_DATABASE_URL, ALLOWED_HOSTS, DEEPGRAM_API_KEY, OPENAI_API_KEY required.  
-
-
-------- [local.env] --------  
-DEPLOYMENT=local  
-DJANGO_SETTINGS_MODULE=djgoprod.settings  
-DEEPGRAM_API_KEY=\<add here\>  
-OPENAI_API_KEY=\<add here\>  
-GOOGLE_CLIENT_ID=\<add here\>  
-GOOGLE_SECRET_KEY=\<add here\>  
-
-------- [development.env] --------  
-DEPLOYMENT=development  
-DJANGO_SETTINGS_MODULE=djgoprod.settings  
-SECRET_KEY=\<add here\>  
-PSQL_DATABASE_URL=\<add here\>  
-ALLOWED_HOSTS=\<add here\>  
-DEEPGRAM_API_KEY=\<add here\>  
-OPENAI_API_KEY=\<add here\>  
-GOOGLE_CLIENT_ID=\<add here\>  
-GOOGLE_SECRET_KEY=\<add here\>  
-
-------- [production.env] --------  
-DEPLOYMENT=production  
-DJANGO_SETTINGS_MODULE=djgoprod.settings  
-SECRET_KEY=\<add here\>  
-PSQL_DATABASE_URL=\<add here\>  
-ALLOWED_HOSTS=\<add here\>  
-DEEPGRAM_API_KEY=\<add here\>  
-OPENAI_API_KEY=\<add here\>  
-GOOGLE_CLIENT_ID=\<add here\>  
-GOOGLE_SECRET_KEY=\<add here\>  
+    - DEPLOYMENT: A string representing the deployment environment.
+        [Options: local, development, production]
+    - SECRET_KEY: A secret key for the Django project.
+        [Environment variable in: development, production]
+    - ALLOWED_HOSTS: A list of strings representing the allowed hosts.
+        [Environment variable in: development, production]
+    - PSQL_DATABASE_URL: A string representing the database URL.
+        [Environment variable in: development, production]
+    - LOCAL_SQLITE: A string representing the name of the local SQLite database (without .sqlite3 extension).
+        [Environment variable in: local]
