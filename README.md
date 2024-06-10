@@ -1,3 +1,5 @@
+![License](https://img.shields.io/badge/license-MIT-green)
+
 # Djgo-prod: Django Google OAuth Template Designed for Production
 
 <p align="center">
