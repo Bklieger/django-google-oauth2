@@ -6,9 +6,9 @@
   <img src="./djgoprod/static/assets/imgs/djgo-prod-logo.png" alt="Djgo-prod Logo" width="600"/>
 </p>
 
-~~~
+## Description
+
 Django-google-oauth2 (Djgo-prod) is a boilerplate template for a Django app with Google OAuth2. It is built to be easy to understand while also fully functional and ready for production.
-~~~
 
 ## Motivation
 
