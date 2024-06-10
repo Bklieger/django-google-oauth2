@@ -25,4 +25,5 @@ urlpatterns = [
     path('dj-rest-auth/google/', GoogleLogin.as_view(), name='google_login'), # Google OAuth login
     path('login/', views.custom_google_login, name='login'), # Custom login page
     path('logout/', views.custom_logout, name='logout'), # Custom logout page
+    path('check-auth/', views.check_auth, name='check_auth'), # Check auth status
 ]

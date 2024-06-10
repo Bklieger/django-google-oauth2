@@ -9,6 +9,7 @@ Date: 2024-06-01
 from django.shortcuts import render
 from django.shortcuts import redirect
 from django.contrib.auth import logout
+from django.http import JsonResponse
 
 # View for logging in with google
 def custom_google_login(request):
@@ -20,3 +21,10 @@ def custom_google_login(request):
 def custom_logout(request):
     logout(request) # Logout the user
     return redirect("/")
+
+# View to check auth
+def check_auth(request):
+    if request.user.is_authenticated:
+        return JsonResponse({'authenticated': True})
+    else:
+        return JsonResponse({'authenticated': False}, status=403)
