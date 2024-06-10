@@ -8,12 +8,18 @@
 
 There are many open source Django boilerplate templates, but they are often outdated, bloated, overly complex, or lack important features for use in production. The motivation for this project was to create an intuitive boilerplate that contains all the essential features to start a production-ready Django backend app with authentication: Google OAuth2, optional PostgreSQL database, whitenoise for static files, dockerization, and three configurable deployment environments.
 
-## Description of Stack
+## Features
 
-With Google OAuth, you do not need to manage login, logout, reset password, and confirm email logic nor pages. It is also a faster experience for users than traditional authentication. With Django, you can add password support at any time after launch. You can easily use a local SQLite database or a PostgreSQL database using just one line in your .env file. Whitenoise is configured to help prevent any static file issues when running and deploying. Docker allows you to easily run the project and collaborate simply across computer environments. Finally, the three different deployment environments allow you to switch between debugging in local, testing in development, and deploying in production without needing to modify settings.py.
+Features
+
+- 🔒 Simple and Secure Auth: With Google OAuth, you do not need to manage login, logout, reset password, or confirm email logic or pages. It also provides a faster user experience than traditional authentication.
+- 🔄 Password Support: Since the app uses Django and stores users in your database, you can easily add password support at any time after launch.
+- 💾 Flexible Database Options: Use a local SQLite database or a PostgreSQL database with just one line in your .env file.
+- 🛡️ Static File Management: Whitenoise is configured to prevent static file issues during runtime and deployment.
+- 🐳 Docker Integration: Easily run the project and collaborate across different computer environments with Docker.
+- 🚀 Seamless Deployment: Switch between debugging in local, testing in development, and deploying in production without modifying settings.py.
 
 Djgo-prod is powerful because it makes everything simple.
-
 
 # Getting Started
 
