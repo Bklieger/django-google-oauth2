@@ -1,7 +1,7 @@
 # Djgo-prod: Django Google OAuth Template Designed for Production
 
 <p align="center">
-  <img src="./assets/imgs/djgo-prod-logo.png" alt="Djgo-prod Logo" width="600"/>
+  <img src="./djgoprod/static/assets/imgs/djgo-prod-logo.png" alt="Djgo-prod Logo" width="600"/>
 </p>
 
 ## Motivation
@@ -175,6 +175,10 @@ python manage.py check --deploy
 ~~~
 
 ### Initialize or update database
+~~~
+python manage.py makemigrations accounts
+python manage.py migrate accounts
+~~~
 ~~~
 python manage.py makemigrations
 python manage.py migrate
