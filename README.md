@@ -10,8 +10,6 @@ There are many open source Django boilerplate templates, but they are often outd
 
 ## Features
 
-Features
-
 - 🔒 Simple and Secure Auth: With Google OAuth, you do not need to manage login, logout, reset password, or confirm email logic or pages. It also provides a faster user experience than traditional authentication.
 - 🔄 Password Support: Since the app uses Django and stores users in your database, you can easily add password support at any time after launch.
 - 💾 Flexible Database Options: Use a local SQLite database or a PostgreSQL database with just one line in your .env file.
