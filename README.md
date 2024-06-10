@@ -8,18 +8,17 @@ There are many open source Django boilerplate templates, but they are often outd
 
 With Google Oauth, you do not need to manage login, logout, reset password, and confirm email logic nor pages. It is also a faster experience for users than traditional authentication. With Django, you can add password support at any time after launch. You can easily use a local SQLite database or a PostgreSQL database using just one line in your .env file. Whitenoise is configured to help prevent any static file issues when running and deploying. Docker allows you to easily run the project and collaborate simply across computer environments. Finally, the three different deployment environments allow you to switch between debugging in local, testing in development, and deploying in production without needing to modify settings.py.
 
-Django-Google-Oauth is powerful because it makes everything simple.
+Djgo-prod is powerful because it makes everything simple.
 
 
-## Getting Started
-Replace "djgoprod" with your project name.
+# Getting Started
 
-Important note: This template was built with integeration compatibility to a separate frontend in mind, so you do not need significant alterations to link the backend to your frontend.
+## Step 1: Prepare Repository
+
+Within the entire repository, replace "djgoprod" with your project name. This includes the .env examples in this README.md file as well as the name of the "djgoprod" folder, in addition to all the file contents.
 
 
-# Instructions to Run
-
-## Step 1: Prepare Environment Variables
+## Step 2: Prepare Environment Variables
 
 ### Required Variables
 
@@ -117,7 +116,7 @@ The GOOGLE_CLIENT_ID and GOOGLE_SECRET_KEY are required for all deployments. In 
 Once you have set all the variables in a file named {deployment}.env (e.g. local.env, development.env, production.env), you can move to the next step. Using docker is recommended, but instructions for deployment without docker are included.
 
 
-## Step 2: Run With Docker
+## Step 3: Run With Docker
 
 ### To build the docker image
 ~~~
@@ -133,7 +132,7 @@ DEPLOYMENT = local, development, or production. Run with -d for detached.
 The application is now up and running! You can check the status of the deployment for any errors in the logs.
 
 
-## Alternate Step 2: Run Without Docker
+## Step 3 Alternate: Run Without Docker
 
 ### To create virtual env
 ~~~
