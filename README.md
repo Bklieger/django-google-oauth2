@@ -1,5 +1,6 @@
 # Djgo-prod: Django Google OAuth Template Designed for Production
 
+![Djgo-prod Logo](./assets/imgs/djgo-prod-logo.png)
 ## Motivation
 
 There are many open source Django boilerplate templates, but they are often outdated, bloated, overly complex, or lack important features for use in production. The motivation for this project was to create an intuitive boilerplate that contains all the essential features to start a production-ready Django backend app with authentication: Google OAuth2, optional PostgreSQL database, whitenoise for static files, dockerization, and three configurable deployment environments.
