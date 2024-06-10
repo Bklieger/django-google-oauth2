@@ -17,17 +17,24 @@ The djgoprod app defines the main configuration settings for the djoprod applica
 Environment Variables:  
     - GOOGLE_CLIENT_ID: A string representing the Google OAuth2 client ID.  
         [Environment variable in: local, development, production]  
+        
     - GOOGLE_CLIENT_SECRET: A string representing the Google OAuth2 client secret.  
         [Environment variable in: local, development, production]  
+
     - DJANGO_SETTINGS_MODULE: Required for running, always djgoprod.settings  
         [Environment variable in: local, development, production (all)]  
+
     - DEPLOYMENT: A string representing the deployment environment.
         [Options: local, development, production]
+
     - SECRET_KEY: A secret key for the Django project.
         [Environment variable in: development, production]
+
     - ALLOWED_HOSTS: A list of strings representing the allowed hosts.
         [Environment variable in: development, production]
+
     - PSQL_DATABASE_URL: A string representing the database URL.
         [Environment variable in: development, production]
+
     - LOCAL_SQLITE: A string representing the name of the local SQLite database (without .sqlite3 extension).
         [Environment variable in: local]
