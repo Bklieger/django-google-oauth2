@@ -1,7 +1,7 @@
 # Djgo-prod: Django Google OAuth Template Designed for Production
 
 <p align="center">
-  <img src="./assets/imgs/djgo-prod-logo.png" alt="Djgo-prod Logo" width="400"/>
+  <img src="./assets/imgs/djgo-prod-logo.png" alt="Djgo-prod Logo" width="600"/>
 </p>
 
 ## Motivation
