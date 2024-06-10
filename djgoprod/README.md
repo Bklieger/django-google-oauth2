@@ -15,9 +15,10 @@ The djgoprod app defines the main configuration settings for the djoprod applica
 ## Environment Variables
 
 Environment Variables:  
+
     - GOOGLE_CLIENT_ID: A string representing the Google OAuth2 client ID.  
         [Environment variable in: local, development, production]  
-        
+
     - GOOGLE_CLIENT_SECRET: A string representing the Google OAuth2 client secret.  
         [Environment variable in: local, development, production]  
 
