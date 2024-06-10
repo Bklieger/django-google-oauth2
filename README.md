@@ -140,6 +140,9 @@ DEPLOYMENT = local, development, or production. Run with -d for detached.
 
 The application is now up and running! You can check the status of the deployment for any errors in the logs.
 
+<p align="center">
+  <img src="./assets/imgs/djgoprod-login.png" alt="Djgo-prod Logo" width="400"/>
+</p>
 
 ## Step 3 Alternate: Run Without Docker
 
@@ -205,6 +208,10 @@ gunicorn --bind 0.0.0.0:8000 --workers 4 -k uvicorn.workers.UvicornWorker djgopr
 ~~~
 
 The application is now up and running! 
+
+<p align="center">
+  <img src="./assets/imgs/djgoprod-login.png" alt="Djgo-prod Logo" width="400"/>
+</p>
 
 
 ## Contributing
