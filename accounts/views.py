@@ -10,6 +10,8 @@ from django.shortcuts import render
 from django.shortcuts import redirect
 from django.contrib.auth import logout
 from django.http import JsonResponse
+from django.middleware.csrf import get_token
+
 
 # View for logging in with google
 def custom_google_login(request):
@@ -28,3 +30,6 @@ def check_auth(request):
         return JsonResponse({'authenticated': True})
     else:
         return JsonResponse({'authenticated': False}, status=403)
+
+def get_csrf_token(request):
+    return JsonResponse({'csrfToken': get_token(request)})

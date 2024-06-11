@@ -26,4 +26,5 @@ urlpatterns = [
     path('login/', views.custom_google_login, name='login'), # Custom login page
     path('logout/', views.custom_logout, name='logout'), # Custom logout page
     path('check-auth/', views.check_auth, name='check_auth'), # Check auth status
+    path('get-csrf-token/', views.get_csrf_token, name='get_csrf_token'), # Get CSRF token
 ]
