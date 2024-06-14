@@ -36,7 +36,7 @@ Within the entire repository, replace "djgoprod" with your project name. This in
 
 ### Required Variables
 
-Before you can deploy the application, you must first set your environment variables. This includes Google Oauth, deepgram, and OpenAI API keys. You can use the environment variables as a list of required steps for setting up the project.
+Before you can deploy the application, you must first set your environment variables. You can use the environment variables as a list of required steps for setting up the project.
 
 ### Local Deployment
 
